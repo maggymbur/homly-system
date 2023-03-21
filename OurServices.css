@@ -1,0 +1,57 @@
+.nannies{
+    display: block;
+    padding: 10px;
+    
+    
+    
+ }
+ .nannyImage{
+    width: max-content;
+ 
+    background-size: cover;
+    position: relative;
+ 
+ }
+ .nanny-content{
+    display: inline-block;
+    background-color: azure;
+    margin-left: 330px;
+    margin-top: -3000px;
+ }
+ 
+ .Househelps{
+    display: block;
+    padding: 10px;
+    background-image: ;
+ }
+ .nannyImage{
+    width: 800px;
+    background-size: cover;
+    position: relative;
+ 
+ }
+ .househelp-content{
+    display: inline-block;
+    background-color: azure;
+    margin-left: 530px;
+    margin-top: -1000px;
+ }
+ 
+ .Caregivers{
+    display: block;
+    padding: 10px;
+    
+    background-image: url;
+ }
+ .nannyImage{
+    width: 800px;
+    background-size: cover;
+    position: relative;
+ 
+ }
+ .caregiver-content{
+    display: inline-block;
+    background-color: azure;
+    margin-left: 270px;
+    margin-top: -1000px;
+ }

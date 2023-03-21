@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  body{
+    background: #f3F5F9;
+  
+  }
+  .wrapper{
+    display: flex;
+    position: relative;
+  }
+  .wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(81, 15, 187);
+    padding: 30px 0;
+  
+  }
+  .sidebar h2{
+    background: chocolate;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid;
+    border-top:1px solid floralwhite ;
+  }
+  .sidebar ul li a{
+    color: blanchedalmond;
+    display: block;
+  }
+  .sidebar ul li .fa{
+    width: 25px;
+  
+  }
+  .sidebar ul li:hover a{
+  color: burlywood;
+  }
+  
+  .wrapper .sidebar .sign-up{
+          position: fixed;
+          
+          bottom: 8px;
+          left:0;
+          width: 200px;
+          height: 120px;
+          background-color: rgb(81, 15, 187);
+          
+          padding: 20px;
+         color: darkorange;
+         text-align: center;
+  
+  }
+  .wrapper .main-content{
+    width: 100%;
+    margin-left: 200px;
+  }
+  .wrapper .main-content .header{
+    padding: 20px;
+    background: #f3F5F9;
+    color: rgb(111, 114, 15);
+    border-bottom: 1px solid;
+  }
+  
+  .info{
+    display: block;
+    padding: 10px;
+    background-color: beige;
+  }
+  .btn-1{
+    background-color: blueviolet;
+    font-size: 24px;
+    display: block; 
+    margin: 0 auto; 
+    color: black;
+    width: 500px;
+    height: 80px;
+}
