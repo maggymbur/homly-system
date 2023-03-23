@@ -104,7 +104,7 @@ p{
             
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
-            <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
+            <li><a href="./index.htm"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             <li><a href="feedback.php"><i class="fa-solid fa-circle-question"></i>Feedback</a></li>
             
             <li><a href="#"><i class="fa-regular fa-commentcontent</a></li>

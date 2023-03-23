@@ -5,7 +5,7 @@ $email = $_SESSION["email"];
 $w_id = $_SESSION["id"];
 $query = "SELECT * FROM worker WHERE  email= '$email'";
 $results = mysqli_query($conn, $query);
-$query = "SELECT * FROM booking WHERE  worker_id= '$w_id'";
+$query = "SELECT * FROM booking WHERE worker_id ='$w_id'";
 $bidding_result = mysqli_query($conn, $query);
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ $bidding_result = mysqli_query($conn, $query);
             <li><a href="./index.php">Home</a></li>
             <li><a href="./OurMaids.php"><i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             
-            <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
+            <li><a href="./index.htm"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
            

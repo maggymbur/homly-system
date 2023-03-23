@@ -47,7 +47,7 @@
             <li><a href= "<?php echo $_link; ?>"> <i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
-            <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
+            <li><a href="./index.htm"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
             <li> <a href="#">Rate Us</a></li>

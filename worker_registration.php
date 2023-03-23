@@ -125,7 +125,7 @@ button[type="reset"]:hover {
          <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href= "<?php echo $_link; ?>"> <i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
-            <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
+            <li><a href="./index.htm"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             

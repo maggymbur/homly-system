@@ -46,7 +46,7 @@
          <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href= "<?php echo $_link; ?>"> <i class="fa-thin fa-magnifying-glass"></i>Our maids/profile</a></li>
-            <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
+            <li><a href="./index.htm"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
             <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             
@@ -74,9 +74,8 @@
          <div class="info"> Welcome to Homly Househelp website, your one-stop solution for finding reliable and trustworthy househelp services.<br>
              We understand how busy life can get, and how difficult it can be to juggle work, family, and household chores all at once.
               This is where we come in, to make your life easier and more convenient. </div> <br></br>
-              <div >
-                <button class="btn-1"><a href="./login.htm" style="text-decoration:none; color: black;" >Get started</a></button>
-            </div><br><br>
+
+             
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
