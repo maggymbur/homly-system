@@ -102,7 +102,7 @@
                     <img src="./images/househelp3.jpg" class="d-block w-100" alt="image">
                   </div>
                   <div class="carousel-item">
-                    <img src=".images/caregiver2.jpg" class="d-block w-100" alt="...">
+                    <img src="./images/caregiver2.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button  class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">

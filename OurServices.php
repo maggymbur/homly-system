@@ -49,7 +49,8 @@
             We understand how busy life can get, and how difficult it can be to juggle work, family, and household chores all at once.
              This is where we come in, to make your life easier and more convenient. 
              <br>
-             <p>At Homly Househelp, we provide access to a vast network of trained and experienced househelps who are available to provide services at your convenience.
+             <p>At Homly Househelp, we provide access to a vast network of trained
+                and experienced househelps who are available to provide services at your convenience.
                Whether you need a housekeeper or a nanny, we have the perfect match for you.</p>
          </div>
          <br> <br>
@@ -59,8 +60,11 @@
            
            <div class="nanny-content">
             <h2><b>Nannies</b></h2>
-             <p> Homly website provides you with qualified and experienced nannies countrywide. 
-            Our nannies...</p> </div>
+             <p>
+   We understand how important it is to find a trustworthy and reliable nanny to care for your children. 
+That's why we offer professional nanny services to give you peace of mind and ensure your children are in good hands.
+Our nannies are experienced in providing quality care for children of all ages, from infants to teenagers.
+ They are available for full-time or part-time positions.</p> </div>
           </div>
 
          <div class="Househelps">
@@ -69,7 +73,7 @@
            
            <div class="househelp-content">
             <h2><b>Househelps</b></h2>
-            <p>Our househelps are experienced on matters house chores and offer the best services at professional levels</p>
+            <p>Our househelps are experienced on matters house chores and offer the best services at professional levels.</p>
            </div>
          </div>
 
@@ -80,7 +84,7 @@
            <div class="caregiver-content">
             <h2><b>Caregivers</b></h2>
             <p>Having elderly people and wondering who to leave them with when attending your daily duties?
-                Homly website gives you a solution by providing you with caregivers who are experienced and caring....</p>
+                Homly website gives you a solution by providing you with caregivers who are experienced and caring.</p>
            </div>
          </div>
       </div>
