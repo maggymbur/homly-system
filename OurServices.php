@@ -6,8 +6,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HOME</title>
-   <link rel="stylesheet" href="./home.css">
-   <link rel="stylesheet" href="./OurServices.css">
+   <link rel="stylesheet" href="home.css">
+   <link rel="stylesheet" href="OurServices.css">
    <script src="https://kit.fontawesome.com/3f3b37584c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,7 +23,7 @@
 
             <li><a href="./index.htm"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
-            <li> <a href="#">Rate Us</a></li> 
+            <li> <a href="rate.php">Rate Us</a></li> 
          </ul>
          <br>
          <div class="reachOut">
@@ -54,7 +54,7 @@
          </div>
          <br> <br>
          <div class="nannies">
-            <div class="nannyImage"><img src="./nanny.jpeg" alt="nanny image">
+            <div class="nannyImage"><img src="./images/nanny 1.jpg" alt="nanny image">
             </div>
            
            <div class="nanny-content">
@@ -64,7 +64,7 @@
           </div>
 
          <div class="Househelps">
-            <div class="nannyImage"><img src="./househelp.jpg" alt="nanny image">
+            <div class="nannyImage"><img src="./images/househelp3.jpg" alt="nanny image">
             </div>
            
            <div class="househelp-content">
@@ -74,7 +74,7 @@
          </div>
 
          <div class="Caregivers">
-            <div class="nannyImage"><img src="./caregiver.jpeg" alt="nanny image">
+            <div class="nannyImage"><img src="./images/caregiver.jpeg" alt="nanny image">
             </div>
            
            <div class="caregiver-content">

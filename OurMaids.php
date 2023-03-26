@@ -37,7 +37,7 @@
             <li><a href="./index.htm"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
            
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
-            <li> <a href="#">Rate Us</a></li>
+            <li> <a href="rate.php">Rate Us</a></li>
          </ul>
          <br>
          <div class="reachOut">

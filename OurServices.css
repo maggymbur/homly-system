@@ -1,57 +1,45 @@
-.nannies{
-    display: block;
-    padding: 10px;
-    
-    
-    
- }
- .nannyImage{
-    width: max-content;
- 
-    background-size: cover;
-    position: relative;
- 
- }
- .nanny-content{
-    display: inline-block;
-    background-color: azure;
-    margin-left: 330px;
-    margin-top: -3000px;
+
+/* Center the main content */
+.info {
+   text-align: center;
+   max-width: 800px;
+   margin: 0 auto;
  }
  
- .Househelps{
-    display: block;
-    padding: 10px;
-    background-image: ;
- }
- .nannyImage{
-    width: 800px;
-    background-size: cover;
-    position: relative;
- 
- }
- .househelp-content{
-    display: inline-block;
-    background-color: azure;
-    margin-left: 530px;
-    margin-top: -1000px;
+ /* Style the section headings */
+ h2 {
+   font-size: 2em;
+   margin-top: 0;
  }
  
- .Caregivers{
-    display: block;
-    padding: 10px;
-    
-    background-image: url;
+ /* Style the images */
+ .nannyImage img {
+   width: 100%;
+   height: auto;
  }
- .nannyImage{
-    width: 800px;
-    background-size: cover;
-    position: relative;
  
+ /* Style the content for each section */
+ .nanny-content, .househelp-content, .caregiver-content {
+   padding: 20px;
  }
- .caregiver-content{
-    display: inline-block;
-    background-color: azure;
-    margin-left: 270px;
-    margin-top: -1000px;
+ 
+ /* Create a grid layout for the sections */
+ .nannies, .Househelps, .Caregivers {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20px;
+   margin-bottom: 40px;
  }
+ 
+ /* Add a border to the sections */
+ .nannies, .Househelps, .Caregivers {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   overflow: hidden;
+ }
+ 
+ /* Add a hover effect to the sections */
+ .nannies:hover, .Househelps:hover, .Caregivers:hover {
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
