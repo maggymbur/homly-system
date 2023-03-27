@@ -1,5 +1,17 @@
 <?php
 require 'config.php';
+if(isset($_SESSION["usertype"])){
+   $email = $_SESSION["email"];
+   if($_SESSION["usertype"]== 'c'){
+      $_link="./OurMaids.php";
+   }
+   elseif($_SESSION["usertype"]== 'w'){
+      $_link="./profile.php";
+   }
+}
+else{
+   $_link ="login.php";
+}
 if(isset($_POST["submit"])){
    $title = $_POST["title"];
    $content = $_POST["content"];
@@ -104,15 +116,13 @@ p{
             
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
-            <li><a href="./index.htm"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
+            <li><a href="./howItWorks"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
             <li><a href="feedback.php"><i class="fa-solid fa-circle-question"></i>Feedback</a></li>
-            
-            <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
             <li> <a href="rate.php">Rate Us</a></li>
          <br>
          <div class="reachOut">
-          <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
-          <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
+          <a href=" https://wa.me/707429670"><img src="./images/whatsapp.avif" style="width: 50px;height:60px"> </a> 
+          <a href="www.facebook.com"><img src="./images/facebook.png" style="width: 60px;height:60px"></a> 
          </div>
             <div class="sign-up">
                <ul>

@@ -9,7 +9,12 @@ if(isset($_POST["login"])){
       if($password== $row["password"]){
          // if (!isset($_SESSION['login'])){
          $_SESSION["login"] = true;
-         $_SESSION["id"]= $row["id"];
+ 
+         while ($row1 = $result->fetch_assoc()) {
+            $_SESSION["id"]= $row1["id"];
+         }         
+ 
+      //   $_SESSION["id"]= $row["id"];
          $_SESSION["email"] = $email;
          $_SESSION["usertype"]=$row["usertype"];
          
@@ -93,8 +98,8 @@ if(isset($_POST["login"])){
             <li> <a href="rate.php">Rate Us</a></li>
          <br>
          <div class="reachOut">
-          <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
-          <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
+          <a href=" https://wa.me/707429670"><img src="./images/whatsapp.avif" style="width: 50px;height:60px"> </a> 
+          <a href="www.facebook.com"><img src="./images/facebook.png" style="width: 60px;height:60px"></a> 
          </div>
 
             <div class="sign-up">

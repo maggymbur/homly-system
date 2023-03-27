@@ -1,11 +1,27 @@
 <?php 
 require 'config.php';
 
+if(isset($_SESSION["usertype"])){
+   if($_SESSION["usertype"]== 'c'){
+      $_link="./OurMaids.php";
+   }
+   elseif($_SESSION["usertype"]== 'w'){
+      $_link="./profile.php";
+   }
+}
+else{
+   $_link ="login.php";
+}
+
 $email = $_SESSION["email"];
-$w_id = $_SESSION["id"];
+$query = "SELECT * FROM worker WHERE  email= '$email'";
+$result_id = mysqli_query($conn, $query);
+while ($row = $result_id->fetch_assoc()) {
+   $worker_id = $row['worker_id'];
+}
 $query = "SELECT * FROM worker WHERE  email= '$email'";
 $results = mysqli_query($conn, $query);
-$query = "SELECT * FROM booking WHERE worker_id ='$w_id'";
+$query = "SELECT * FROM booking WHERE  worker_id= '$worker_id'";
 $bidding_result = mysqli_query($conn, $query);
 ?>
 <!DOCTYPE html>

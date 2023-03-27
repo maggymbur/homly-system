@@ -198,7 +198,8 @@ button[type="reset"]:hover {
    <input type="radio" id="other" name="gender" value="o" required>
    <label for="other">Other</label><br><br>
 
-  
+   <input type="checkbox" required>
+   <label for= "terms"><a href="workerTerms.php">I agree to terms & conditions</a> </label> <br><br> 
 
    <button type="submit" name= "submit" value="Submit"> Submit</button>
    <button type="reset" name="reset" value="Reset"> Reset </button>

@@ -1,4 +1,17 @@
-<?php ?>
+<?php 
+ if(isset($_SESSION["usertype"])){
+   $email = $_SESSION["email"];
+   if($_SESSION["usertype"]== 'c'){
+      $_link="./OurMaids.php";
+   }
+   elseif($_SESSION["usertype"]== 'w'){
+      $_link="./profile.php";
+   }
+}
+else{
+   $_link ="login.php";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

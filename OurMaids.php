@@ -1,18 +1,27 @@
 <?php 
    require 'config.php';
+   if(isset($_SESSION["usertype"])){
+      $email = $_SESSION["email"];
+      if($_SESSION["usertype"]== 'c'){
+         $_link="./OurMaids.php";
+      }
+      elseif($_SESSION["usertype"]== 'w'){
+         $_link="./profile.php";
+      }
+   }
+   else{
+      $_link ="login.php";
+   }
 
    $email = $_SESSION["email"];
-   // $query = "SELECT services FROM client WHERE email = '$email'";
    $query = "SELECT services FROM client WHERE email = '$email'";
    $service_query = mysqli_query($conn, $query);
    while($row = mysqli_fetch_array($service_query)){
       $service = $row[0];
    };
-      
-   $query = "SELECT * FROM worker WHERE  skills = '$service'";
-   $results = mysqli_query($conn, $query);
+   ?>
 
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,15 +43,15 @@
             
             <li><a href="./OurServices.php"><i class="fa-regular fa-bell-concierge"></i>Our services</a></li>
 
-            <li><a href="./index.htm"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
+            <li><a href="./howItWorks.php"><i class="fa-solid fa-circle-question"></i>How it works</a></li>
            
             <li><a href="feedback.php"><i class="fa-regular fa-comments"></i>Feedback</a></li>
             <li> <a href="rate.php">Rate Us</a></li>
          </ul>
          <br>
          <div class="reachOut">
-            <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
-            <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
+            <a href=" https://wa.me/707429670"><img src="./images/whatsapp.avif" style="width: 50px;height:60px"> </a> 
+            <a href="www.facebook.com"><img src="./images/facebook.png" style="width: 60px;height:60px"></a> 
            </div>
             <div class="sign-up">
                <ul>
@@ -57,8 +66,8 @@
       <div class="main-content">
          <div class="header"><h2>Homly website</h2> <p><i> your one-stop solution for finding reliable and trustworthy househelp services.</i></p>   </div>
          <?php
-            echo "<table border = '1px'>";
-            while($row= mysqli_fetch_array($results)){
+            echo "<table border = '10px'>";
+            while($row= mysqli_fetch_array($service_query)){
                $worker_id = $row[0];
                $first_name = $row[1];
                $middle_name = $row[2];
@@ -104,5 +113,6 @@
          ?>
       </div>
       </div>
+     
 </body>
 </html>
