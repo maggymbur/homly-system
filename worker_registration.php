@@ -218,6 +218,7 @@ button[type="reset"]:hover {
    </div>
      
    <script>
+      // AGE VALIDATION
   // Get the age input element
   var ageInput = document.getElementById("age");
 
