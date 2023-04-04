@@ -19,7 +19,12 @@
    while($row = mysqli_fetch_array($service_query)){
       $service = $row[0];
    };
-   ?>
+   
+   $query = "SELECT * FROM worker WHERE  skills = '$service' ";
+   $results = mysqli_query($conn, $query);
+
+
+?>
 
 
 <!DOCTYPE html>
@@ -66,8 +71,8 @@
       <div class="main-content">
          <div class="header"><h2>Homly website</h2> <p><i> your one-stop solution for finding reliable and trustworthy househelp services.</i></p>   </div>
          <?php
-            echo "<table border = '10px'>";
-            while($row= mysqli_fetch_array($service_query)){
+            echo "<table border = '5px'>";
+            while($row= mysqli_fetch_array($results)){
                $worker_id = $row[0];
                $first_name = $row[1];
                $middle_name = $row[2];

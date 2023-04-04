@@ -110,7 +110,7 @@ $bidding_result = mysqli_query($conn, $query);
          echo "<li> Gender:  {$gender} </li>"; 
         
          echo "</ol>";
-         echo "<table border = '1px'>";
+         echo "<table border = '10px'>";
          while($row = mysqli_fetch_array($bidding_result)){
             $query = "SELECT * FROM client WHERE client_id = '$row[1]'";
             $client_result = mysqli_query($conn, $query);
@@ -127,7 +127,7 @@ $bidding_result = mysqli_query($conn, $query);
             echo "<td> {$surname} </td>"; 
             echo "<td> {$service} </td>"; 
             echo "<td> {$location} </td>"; 
-            echo "<td> <a href = 'accept.php?client_id=$client_id'> ACCEPT </a> </td>";
+            echo "<td> <a href = 'accept.php?client_id=$client_id&worker_id=$worker_id'> ACCEPT </a> </td>";
 
             echo "</tr>";
          }

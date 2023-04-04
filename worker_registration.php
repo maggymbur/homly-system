@@ -133,8 +133,8 @@ button[type="reset"]:hover {
             <li> <a href="rate.php">Rate Us</a></li>
          <br>
          <div class="reachOut">
-          <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
-          <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
+          <a href=" https://wa.me/707429670"><img src="./images/whatsapp.avif" style="width: 50px;height:60px"> </a> 
+          <a href="www.facebook.com"><img src="./images/facebook.png" style="width: 60px;height:60px"></a> 
          </div>
 
             <div class="sign-up">
@@ -162,6 +162,9 @@ button[type="reset"]:hover {
    <label for="Surname"> Surname:</label>
    <input type="text" id="surname" name="surname" required><br><br>
 
+   <label for="age"> age(must be 20+):</label>
+   <input type="text" id="age" name="age" required><br><br>
+
    <label for="email">Email:</label>
    <input type="email" id="email" name="email" required><br><br>
 
@@ -181,7 +184,7 @@ button[type="reset"]:hover {
    <label for="location">location:</label>
    <input type="text" id="location" name="location" required><br><br>
 
-   <label for="experience">experience:</label>
+   <label for="experience">experience(in years):</label>
    <input type="experience" id="experience" name="experience" required><br><br>
 
    <label for="password">Password:</label>
@@ -213,7 +216,27 @@ button[type="reset"]:hover {
          
      
    </div>
-      
+     
+   <script>
+  // Get the age input element
+  var ageInput = document.getElementById("age");
+
+  // Add an event listener to check the age input value when it changes
+  ageInput.addEventListener("input", function() {
+    // Get the value of the age input field
+    var age = parseInt(ageInput.value);
+
+    // Check if the age is more than 20
+    if (age <= 20) {
+      // If the age is less than or equal to 20, display an error message
+      ageInput.setCustomValidity("You must be 20 or older to use this service.");
+    } else {
+      // If the age is more than 20, clear the error message
+      ageInput.setCustomValidity("");
+    }
+  });
+</script>
+
 
 
 

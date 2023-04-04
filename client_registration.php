@@ -130,8 +130,8 @@ button[type="reset"]:hover {
             <li> <a href="rate.php">Rate Us</a></li>
          <br>
          <div class="reachOut">
-          <a href=" https://wa.me/707429670"><img src="./whatsapp.avif" style="width: 50px;height:60px"> </a> 
-          <a href="www.facebook.com"><img src="./facebook.png" style="width: 60px;height:60px"></a> 
+          <a href=" https://wa.me/707429670"><img src="./images/whatsapp.avif" style="width: 50px;height:60px"> </a> 
+          <a href="www.facebook.com"><img src="./images/facebook.png" style="width: 60px;height:60px"></a> 
          </div>
 
             <div class="sign-up">

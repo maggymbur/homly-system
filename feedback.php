@@ -1,39 +1,42 @@
 <?php
 require 'config.php';
+
 if(isset($_SESSION["usertype"])){
-   $email = $_SESSION["email"];
    if($_SESSION["usertype"]== 'c'){
       $_link="./OurMaids.php";
-   }
-   elseif($_SESSION["usertype"]== 'w'){
+   } elseif($_SESSION["usertype"]== 'w'){
       $_link="./profile.php";
    }
-}
-else{
+} else{
    $_link ="login.php";
 }
+
 if(isset($_POST["submit"])){
    $title = $_POST["title"];
    $content = $_POST["content"];
-   if($_SESSION["login"]){
-      $id_ = $_SESSION["id"];
-      $search = mysqli_query($conn, "SELECT * FROM user_login WHERE id = '$id_'");
-      if(mysqli_num_rows($search)>0){
-         $query = "INSERT INTO feedback VALUES('','$id_', '$title', '$content' )";
-         mysqli_query($conn, $query);
-         echo
-         "<script> alert('feedback is sent successfully'); </script>";
+
+   if(isset($_SESSION["login"])){
+      if($_SESSION["login"]){
+         if(isset($_SESSION["id"])){
+            $id_ = $_SESSION["id"];
+            $search = mysqli_query($conn, "SELECT * FROM user_login WHERE id = '$id_'");
+
+            if(mysqli_num_rows($search)>0){
+               $query = "INSERT INTO feedback VALUES('','$id_', '$title', '$content' )";
+               mysqli_query($conn, $query);
+               echo "<script> alert('feedback is sent successfully'); </script>";
+            } else{
+               echo"<script> alert('id doesnt exist in the database'); </script>";
+            }
+         } else{
+            echo "<script> alert('Session id is not set'); </script>";
+         }
+      } else{
+         echo "<script> alert('Session login is not true'); </script>";
       }
-      else{
-         echo"<script> alert('id doesnt exist in the database'); </script>";
-      }
-     
+   } else{
+      echo "<script> alert('Session login is not set'); </script>";
    }
-   else{
-      echo
-      "<script> alert('You must be logged in to provide feedback');</script>";
-   }
-  
 }
 ?>
 
@@ -148,6 +151,12 @@ p{
       <textarea id="content" name="content" rows="5" cols="40" required></textarea><br>
 
       <button type="submit" name= "submit" value="Submit"> Submit</button>
+
+      <div class="whatsapp">
+         For further feedback or complaints reach us via whatsapp.
+        <a href=" https://wa.me/707429670"><img src="./images/whatsapp.avif" style="width: 50px;height:60px"> </a> 
+
+      </div>
          
       </div>
    </div>
